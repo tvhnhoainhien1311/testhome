@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>aaa</display-name>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>controller.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>bai3.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>bai3.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Bài 4 -->
+  <servlet>
+    <servlet-name>Login1</servlet-name>
+    <servlet-class>bai4.Login1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login1</servlet-name>
+    <url-pattern>/checklogin</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <servlet>  
+    <description></description>  
+    <display-name>Profile1</display-name>  
+    <servlet-name>Profile1</servlet-name>  
+    <servlet-class>bai4.Profile1</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>Profile1</servlet-name>  
+    <url-pattern>/Profile1</url-pattern>  
+  </servlet-mapping>  
+  <servlet>  
+    <description></description>  
+    <display-name>Logout1</display-name>  
+    <servlet-name>Logout1</servlet-name>  
+    <servlet-class>bai4.Logout1</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>Logout1</servlet-name>  
+    <url-pattern>/Logout1</url-pattern>  
+  </servlet-mapping>  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
